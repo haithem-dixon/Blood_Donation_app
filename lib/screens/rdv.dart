@@ -1,6 +1,6 @@
 import'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
-import 'package:hope/thank.dart';
+import 'thank.dart';
 import 'package:intl/intl.dart';
 import 'package:hope/Components/omni_button.dart';
 import 'package:hope/Components/omni_radio.dart';

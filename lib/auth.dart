@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import'package:flutter/material.dart';
-import 'package:hope/home.dart';
-import 'package:hope/login.dart';
+import 'screens/home.dart';
+import 'screens/visiteur.dart';
 
 
 class Auth extends StatelessWidget {
@@ -16,7 +16,7 @@ class Auth extends StatelessWidget {
           if(snapshot.hasData) {
             return const Homee();
           } else{
-            return const Signin();
+            return const Visiteur();
           }
         },
 

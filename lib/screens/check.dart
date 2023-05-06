@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hope/formul.dart';
-import 'package:hope/schedule.dart';
+import 'formul.dart';
+import 'schedule.dart';
 
 class Check extends StatefulWidget {
   const Check({super.key});
@@ -36,10 +36,10 @@ class _CheckState extends State<Check> {
         actions: [
           TextButton(onPressed: (){
              Navigator.push(context,
-                    MaterialPageRoute(builder: (context) =>  Formul())  );
+                    MaterialPageRoute(builder: (context) =>  const Formul())  );
 
           }, 
-          child: Text('Skip',style: TextStyle(fontFamily: 'roboto',fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black,),))
+          child: const Text('Skip',style: TextStyle(fontFamily: 'roboto',fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black,),))
         ],
 
       ),

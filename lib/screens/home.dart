@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hope/check.dart';
-import 'package:hope/emrgency.dart';
-import 'package:hope/formul.dart';
-import 'package:hope/menu.dart';
-import 'package:hope/notifications.dart';
-import 'package:hope/friends.dart';
-import 'package:hope/profile.dart';
-import 'package:hope/campaings.dart';
+import 'check.dart';
+import 'emrgency.dart';
+import 'formul.dart';
+import 'menu.dart';
+import 'notifications.dart';
+import 'friends.dart';
+import 'profile.dart';
+import 'campaings.dart';
 
 
 class Homee extends StatefulWidget {

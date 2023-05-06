@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hope/check.dart';
-import 'package:hope/profile.dart';
+import 'check.dart';
+import 'profile.dart';
 
 class Friend extends StatefulWidget {
   const Friend({super.key});

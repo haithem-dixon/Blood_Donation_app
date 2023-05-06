@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hope/auth.dart';
 import 'package:hope/login.dart';
-import 'package:hope/visiteur.dart';
+import 'screens/visiteur.dart';
 
 
 class Signup extends StatefulWidget {

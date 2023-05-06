@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hope/ghidelines.dart';
-import 'package:hope/home.dart';
+import 'ghidelines.dart';
+import 'home.dart';
 import 'package:hope/login.dart';
-import 'package:hope/profile.dart';
-import 'package:hope/settings.dart';
+import 'profile.dart';
+import 'settings.dart';
 
 class Menuu extends StatefulWidget {
   const Menuu({super.key});

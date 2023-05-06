@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hope/home.dart';
-import 'package:hope/profile.dart';
+import 'home.dart';
+import 'profile.dart';
 
 
 class Visit extends StatefulWidget {

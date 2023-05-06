@@ -1,29 +1,45 @@
 import 'package:flutter/material.dart';
-import 'package:hope/formul.dart';
-import 'package:hope/places.dart';
+import 'formul.dart';
 
-class Schedule extends StatefulWidget {
-  const Schedule({super.key});
+
+class Places extends StatefulWidget {
+  const Places({super.key});
 
   @override
-  State<Schedule> createState() => _ScheduleState();
+  State<Places> createState() => _PlacesState();
 }
 
-class _ScheduleState extends State<Schedule> {
+class _PlacesState extends State<Places> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFFF5F5F5),
       appBar: AppBar(
         elevation: 0.5,
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFFF5F5F5),
+        leading: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+
+                    minimumSize: const Size(20, 20),
+                    backgroundColor: Colors.white,
+                    side: const BorderSide(color: Colors.white)
+                ),
+                onPressed: () {
+                   Navigator.pop(context);
+                },
+                child: const Icon(Icons.arrow_back_ios,
+
+                  size: 33.0,
+                  color: Colors.black87,
+                ),
+              ),
         actions: [
           TextButton(onPressed: (){
              Navigator.push(context,
                     MaterialPageRoute(builder: (context) =>  Formul())  );
 
           }, 
-          child: Text('Skip',style: TextStyle(fontFamily: 'roboto',fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black,),))
+          child: const Text('Skip',style: TextStyle(fontFamily: 'roboto',fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black,),))
         ],
 
       ),
@@ -31,18 +47,17 @@ class _ScheduleState extends State<Schedule> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Image.asset(
-            'images/sche.png',
-            width: 300,
+            'images/places.png',
+            width: 350,
           ),
           const Text(
-            'Schedule appointment',
+            'Trusted places ? ',
             style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),
           ),
            Container(
-            margin: EdgeInsets.symmetric(horizontal: 35,),
+            margin: const EdgeInsets.symmetric(horizontal: 35,),
             child: const Text(
-              'Pick a date and time that is suitable for you to donate with ease',
-              
+              'we will be your link between you and a safe place where you donate your blood',
               style: TextStyle(fontSize: 20,),
               ),
           ),
@@ -63,12 +78,11 @@ class _ScheduleState extends State<Schedule> {
               ),
               
               onPressed: (){
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Places()),); 
+                 Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>  Formul())  );
+                
+                
               }, 
-          
-    
               child: const Padding(
                 padding: EdgeInsets.only(left: 20.0, right:20.0, ),
              

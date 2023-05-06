@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:hope/home.dart';
+import 'home.dart';
 
 class Thank extends StatefulWidget {
   const Thank({super.key});

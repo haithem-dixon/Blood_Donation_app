@@ -1,6 +1,6 @@
 import'package:flutter/material.dart';
-import 'package:hope/ghidelines.dart';
-import 'package:hope/home.dart';
+import 'ghidelines.dart';
+import 'home.dart';
 
 
 class Sory extends StatefulWidget {

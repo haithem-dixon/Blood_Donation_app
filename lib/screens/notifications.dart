@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hope/home.dart';
+import 'home.dart';
 
 
 class Noti extends StatefulWidget {

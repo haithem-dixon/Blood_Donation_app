@@ -623,16 +623,8 @@ class _ProfileState extends State<Profile> {
             ),
            const  SizedBox(height: 50,),
            MaterialButton(
-            onPressed: (){
-              setState(() {
-                FirebaseAuth.instance.signOut();
-                Navigator.push(context,
-                        MaterialPageRoute(builder: (context) =>  const Signin())
-                    );
-              });
-              
-           
-            },
+            onPressed: () => FirebaseAuth.instance.signOut(),
+
             color: Colors.redAccent,
             child: const Text(
               'Sign Out ',

@@ -1,8 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hope/home.dart';
 import 'package:hope/signup.dart';
-import 'package:hope/visiteur.dart';
+import 'screens/visiteur.dart';
 
 class Signin extends StatefulWidget {
   const Signin({super.key});
@@ -187,7 +186,7 @@ class _SigninState extends State<Signin> {
                 ),
                 
                 onPressed:signIn,
-                
+
                 child: const Padding(
                   padding: EdgeInsets.only(left: 20.0, right:20.0, ),
                

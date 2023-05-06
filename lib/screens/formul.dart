@@ -1,5 +1,6 @@
 import'package:flutter/material.dart';
-import 'package:hope/rdv.dart';
+import 'home.dart';
+import 'rdv.dart';
 
 
  
@@ -17,6 +18,46 @@ class _FormulState extends State<Formul> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+
+                    minimumSize: const Size(20, 20),
+                    backgroundColor: Colors.white,
+                    side: const BorderSide(color: Colors.white)
+                ),
+                onPressed: () {
+                   Navigator.pop(context);
+                },
+                child: const Icon(Icons.arrow_back_ios,
+
+                  size: 33.0,
+                  color: Colors.black87,
+                ),
+              ),
+              title: const Text(
+                        'Check Eligibility ',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+              actions: [
+                 IconButton(
+                onPressed: (){
+                  Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>  const Homee())
+                    );
+
+                },
+                icon: const Icon(Icons.home_outlined,
+                  color: Colors.black87,
+
+                ),iconSize: 45,),
+              ],
+      ),
       body: SafeArea(
         
         child: ListView(
@@ -24,36 +65,12 @@ class _FormulState extends State<Formul> {
           children: [
             Container(
               
-              padding: EdgeInsets.only(left: 20,right: 20),
+              padding: const EdgeInsets.only(left: 20,right: 20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      IconButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: const Icon(
-                          Icons.arrow_back_ios,
-                          color: Colors.black,
-                          size: 35,
-                        ),
-                      ),
-                      const Text(
-                        'Check Eligibility ',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 20,),
-             
+                  const SizedBox(height: 20,),
               Center(
                 child: Image.asset(
                   'images/LOGO.png',

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hope/home.dart';
+import 'home.dart';
 
 
 class Setting extends StatefulWidget {
@@ -26,7 +26,7 @@ class _SettingState extends State<Setting> {
 
           minimumSize: Size(20, 20),
       backgroundColor: Colors.white,
-      side: BorderSide(color: Colors.white)
+      side: const BorderSide(color: Colors.white)
   ),
     onPressed: () {
       Navigator.pop(context);
@@ -40,12 +40,12 @@ class _SettingState extends State<Setting> {
   const SizedBox(width: 73.0,),
   ],
   ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Image.asset("images/settings (1).png",
               width: 84,
             ),
-  SizedBox(height: 17,),
-            Text("Settings",
+            const SizedBox(height: 17,),
+           const  Text("Settings",
                 style: TextStyle(
                   color: Colors.black,
 
@@ -71,7 +71,7 @@ class _SettingState extends State<Setting> {
               },
               child:    Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Icon(Icons.language_sharp,
                     size: 37,
                     color: Colors.redAccent,),
@@ -109,7 +109,7 @@ class _SettingState extends State<Setting> {
               },
               child:    Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Icon(Icons.settings_accessibility,
                     size: 37,
                     color: Colors.redAccent,),
@@ -147,7 +147,7 @@ class _SettingState extends State<Setting> {
               },
               child:    Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const  [
                   Icon(Icons.help,
                     size: 37,
                     color: Colors.redAccent,),
@@ -185,7 +185,7 @@ class _SettingState extends State<Setting> {
               },
               child:    Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const  [
                   Icon(Icons.no_accounts_rounded,
                     size: 37,
                     color: Colors.redAccent,),
@@ -248,7 +248,7 @@ class _SettingState extends State<Setting> {
 
 
 
-  SizedBox(height: 30,),]),
+  const SizedBox(height: 30,),]),
 
   )
 

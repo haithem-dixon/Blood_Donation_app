@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hope/sory.dart';
+import 'sory.dart';
 
 class Guides extends StatefulWidget {
   const Guides({super.key});
